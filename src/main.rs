@@ -21,6 +21,9 @@ use self::gtk::*;
     WindowType,
 };*/
 
+mod voc_notebook;
+use voc_notebook::VocNotebook;
+
 mod csv_reading_and_writing;
 
 mod vocabulary;
@@ -34,80 +37,27 @@ macro_rules! hashmap {
     }}
 }
 
-
 fn main() {
     // let file_path = "data.csv";
     // csv_reading_and_writing::write_data(file_path);
     // csv_reading_and_writing::read_data(file_path);
-    let vocabulary : Vocabulary = create_vocabulary_test();
-    run_gtk_example(vocabulary);
+    // let vocabulary : Vocabulary = create_vocabulary_test();
+    run_gtk_example();
 }
 
-fn create_vocabulary_test() -> Vocabulary {
-    let mut a_vocabulary : Vocabulary = Vocabulary {
-        metadata: Metadata {
-            identifier: String::from("HSK1"),
-            source_note: String::from("vocabulary taken from http://data.hskhsk.com/lists/ created by Alan Davies, alan@hskhsk.com 2013-2017")
-        },
-        words: vec![
-            Word {
-                metadata: WordMetadata {
-                    learned: false,
-                    relevance_level: 5,
-                    tags: vec!(String::from("verb"))
-                },
-                translations: vec!(WordTranslation {
-                    translations: hashmap!{
-                        String::from("english") => String::from("love"),
-                        String::from("pinyin_numbered") => String::from("ai4"),
-                        String::from("pinyin") => String::from("ài"),
-                        String::from("chinese_simplified") => String::from("爱"),
-                        String::from("chinese_traditional") => String::from("愛")
-                    },
-                    description: vec![String::from("This is a very clichee word, which everyone learns early on.")],
-                    examples: vec![String::from("我爱你.")]
-                })
-            },
-            Word {
-                metadata: WordMetadata {
-                    learned: false,
-                    relevance_level: 5,
-                    tags: vec![String::from("verb")]
-                },
-                translations: vec!(WordTranslation {
-                    translations: hashmap!{
-                        String::from("english") => String::from("love"),
-                        String::from("pinyin_numbered") => String::from("ai4"),
-                        String::from("pinyin") => String::from("ài"),
-                        String::from("chinese_simplified") => String::from("爱"),
-                        String::from("chinese_traditional") => String::from("愛")
-                    },
-                    description: vec!(String::from("This is a very clichee word, which everyone learns early on.")),
-                    examples: vec!(String::from("我爱你."))
-                })
-            },
-        ]
-    };
-
-    a_vocabulary.words[0].metadata.learned = true;
-    println!("{:?}", a_vocabulary.words[0].metadata.learned);
-
-    a_vocabulary
-}
-
-
-pub fn run_gtk_example(vocabulary: Vocabulary) {
+pub fn run_gtk_example() {
     initialize_gtk();
     let window : Window = Window::new(WindowType::Toplevel);
     configure_window(&window);
 
     let vbox = Box::new(Orientation::Vertical, 0);
     let menubar = create_menu_bar();
-
-    let label = Label::new("HALLO");
+    let mut notebook = create_notebook();
 
     vbox.pack_start(&menubar, false, false, 0); // child expand fill padding
-    vbox.pack_start(&label, true, true, 0);
+    vbox.pack_start(&notebook.notebook, true, true, 0);
+
+    notebook.create_tab_from_str("dynamically added");
 
     // vbox.add(&label);
     window.add(&vbox);
@@ -140,6 +90,9 @@ pub fn create_menu_bar() -> MenuBar {
     // we want to create a menu bar ...
     let menu_bar = MenuBar::new();
     let file_menu : MenuItem = create_file_menu_item();
+    // let edit_menu : MenuItem = create_edit_menu_item();
+    // let view_menu : MenuItem = create_view_menu_item();
+    // let help_menu : MenuItem = create_help_menu_item();
     // append the File menu item to the MenuBar
     menu_bar.append(&file_menu);
     menu_bar
@@ -165,6 +118,28 @@ pub fn create_file_menu_item() -> MenuItem {
     });
 
     file_menu
+}
+
+pub fn create_notebook() -> VocNotebook {
+    let mut notebook = VocNotebook::new();
+    let tab_titles : Vec<&str> = vec!("Library", "Training", "Statistics");
+
+    for tab_title in tab_titles {
+        let label = gtk::Label::new(tab_title);
+        notebook.create_tab(tab_title, label.upcast());
+    }
+    // tab_labels.into_iter().map(|tab_title : &str| {
+    //     let label = gtk::Label::new(tab_title);
+    //     notebook.create_tab(tab_title, label.upcast());
+    // }).collect<>();
+
+    // for i in 1..4 {
+    //     let title = format!("sheet {}", i);
+    //     let label = gtk::Label::new(&*title);
+    //     notebook.create_tab(&title, label.upcast());
+    // }
+
+    notebook
 }
 
 
