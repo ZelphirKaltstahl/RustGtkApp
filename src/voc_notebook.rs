@@ -12,7 +12,8 @@
 extern crate gtk;
 
 use self::gtk::prelude::*;
-use self::gtk::{Box, Button, IconSize, Image, Label, Notebook, Orientation, ReliefStyle, Widget};
+use self::gtk::{
+    Box, Button, Container, IconSize, Image, Label, Notebook, Orientation, ReliefStyle, Widget};
 
 pub struct VocNotebook {
     pub notebook: Notebook,

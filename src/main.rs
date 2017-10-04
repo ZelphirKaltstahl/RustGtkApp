@@ -22,7 +22,7 @@ use self::gtk::*;
 };*/
 
 mod voc_notebook;
-use voc_notebook::VocNotebook;
+use voc_notebook::{VocNotebook};
 
 mod csv_reading_and_writing;
 
@@ -38,10 +38,6 @@ macro_rules! hashmap {
 }
 
 fn main() {
-    // let file_path = "data.csv";
-    // csv_reading_and_writing::write_data(file_path);
-    // csv_reading_and_writing::read_data(file_path);
-    // let vocabulary : Vocabulary = create_vocabulary_test();
     run_gtk_example();
 }
 
@@ -59,20 +55,13 @@ pub fn run_gtk_example() {
 
     notebook.create_tab_from_str("dynamically added");
 
-    // vbox.add(&label);
     window.add(&vbox);
-
-
     window.show_all();
-
     // Handle closing of the window.
     window.connect_delete_event(|_, _| {
         gtk::main_quit();
         Inhibit(false)
     });
-
-    //let main_box : Box = Box::new();
-
     // Run the main loop.
     gtk::main();
 }
@@ -90,9 +79,6 @@ pub fn create_menu_bar() -> MenuBar {
     // we want to create a menu bar ...
     let menu_bar = MenuBar::new();
     let file_menu : MenuItem = create_file_menu_item();
-    // let edit_menu : MenuItem = create_edit_menu_item();
-    // let view_menu : MenuItem = create_view_menu_item();
-    // let help_menu : MenuItem = create_help_menu_item();
     // append the File menu item to the MenuBar
     menu_bar.append(&file_menu);
     menu_bar
@@ -122,26 +108,20 @@ pub fn create_file_menu_item() -> MenuItem {
 
 pub fn create_notebook() -> VocNotebook {
     let mut notebook = VocNotebook::new();
-    let tab_titles : Vec<&str> = vec!("Library", "Training", "Statistics");
+    let tab_titles : Vec<&str> = vec!(
+        "Library", "Training", "Statistics", "not needed");
 
     for tab_title in tab_titles {
         let label = gtk::Label::new(tab_title);
-        notebook.create_tab(tab_title, label.upcast());
+        let index : u32 = notebook.create_tab(tab_title, label.upcast());
+        println!("adding a tab with index {}", index);
     }
-    // tab_labels.into_iter().map(|tab_title : &str| {
-    //     let label = gtk::Label::new(tab_title);
-    //     notebook.create_tab(tab_title, label.upcast());
-    // }).collect<>();
 
-    // for i in 1..4 {
-    //     let title = format!("sheet {}", i);
-    //     let label = gtk::Label::new(&*title);
-    //     notebook.create_tab(&title, label.upcast());
-    // }
+    let tab_content = notebook.notebook.get_nth_page(Some(3)).expect("could not find such notebook page");
 
+    println!("{:?}", tab_content);
     notebook
 }
-
 
 pub fn initialize_gtk() {
     if gtk::init().is_err() {

@@ -25,6 +25,7 @@ pub struct Word {
 
 #[derive(Debug)]
 pub struct WordMetadata {
+    pub identifier: String,
     pub learned: bool,
     pub relevance_level: u8,
     pub tags: Vec<String>
