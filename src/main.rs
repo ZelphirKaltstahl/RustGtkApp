@@ -117,7 +117,10 @@ pub fn create_notebook() -> VocNotebook {
         println!("adding a tab with index {}", index);
     }
 
-    let tab_content = notebook.notebook.get_nth_page(Some(3)).expect("could not find such notebook page");
+    let tab_content = notebook.notebook
+        .get_nth_page(Some(3))
+        .expect("could not find such notebook page");
+    // consider unwrap_or("something")
 
     println!("{:?}", tab_content);
     notebook
