@@ -5,25 +5,29 @@ extern crate rustc_serialize;
 
 use std::collections::HashMap;
 
-#[derive(Debug)]
+#[derive(Debug, Deserialize, Serialize)]
 pub struct Vocabulary {
     pub metadata: Metadata,
     pub words: Vec<Word>
 }
 
-#[derive(Debug)]
+#[derive(Debug, Deserialize, Serialize)]
 pub struct Metadata {
     pub identifier: String,
-    pub source_note: String
+    pub source_note: String,
+    pub first_language_name: String,
+    pub first_language_phonetic_script_name: String,
+    pub second_language_name: String,
+    pub second_language_phonetic_script_name: String
 }
 
-#[derive(Debug)]
+#[derive(Debug, Deserialize, Serialize)]
 pub struct Word {
     pub metadata: WordMetadata,
-    pub translations: Vec<WordTranslation>
+    pub meanings: Vec<WordMeaning>
 }
 
-#[derive(Debug)]
+#[derive(Debug, Deserialize, Serialize)]
 pub struct WordMetadata {
     pub identifier: String,
     pub learned: bool,
@@ -31,11 +35,11 @@ pub struct WordMetadata {
     pub tags: Vec<String>
 }
 
-#[derive(Debug)]
-pub struct WordTranslation {
-    pub translations: HashMap<String, String>,  // for example: german:Ich, chinese_simplified:..., chinese_traditional:...
-    pub description: Vec<String>,  // a single translation might have multiple ways of explanation
-    pub examples: Vec<String>,  // and multiple examples
+#[derive(Debug, Deserialize, Serialize)]
+pub struct WordMeaning {
+    pub translation: HashMap<String, String>,
+    pub description: Vec<String>,
+    pub examples: Vec<String>
 }
 
 /*

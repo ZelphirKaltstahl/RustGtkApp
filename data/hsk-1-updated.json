@@ -1,7 +1,3164 @@
 {
     "metadata": {
         "identifier": "HSK1",
-        "source_note": "vocabulary taken from http://data.hskhsk.com/lists/ created by Alan Davies, alan@hskhsk.com 2013-2017, schema created by zelphirkaltstahl@gmail.com 2017"
+        "source_note": "vocabulary taken from http://data.hskhsk.com/lists/ created by Alan Davies, alan@hskhsk.com 2013-2017, schema created by zelphirkaltstahl@gmail.com 2017",
+        "first_language_name": "English",
+        "first_language_phonetic_script_name": "IPA",
+        "second_language_name": "Chinese (simplified)",
+        "second_language_2_name": "Chinese (traditional)",
+        "second_language_phonetic_script_name": "Pīnyīn",
+        "second_language_phonetic_script_2_name": "Pīnyīn numbered"
     },
-    "words": []
+    "words": [
+        {
+            "metadata": {
+                "identifier": "000",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "love",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "ài",
+                        "chinese_simplified": "爱",
+                        "chinese_traditional": "愛"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "001",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "eight",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "bā",
+                        "chinese_simplified": "八",
+                        "chinese_traditional": "八"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "002",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "Dad",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "bàba",
+                        "chinese_simplified": "爸爸",
+                        "chinese_traditional": "爸爸"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "003",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "cup; glass",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "bēizi",
+                        "chinese_simplified": "杯子",
+                        "chinese_traditional": "杯子"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "004",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "Beijing",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "Běijīng",
+                        "chinese_simplified": "北京",
+                        "chinese_traditional": "北京"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "005",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "measure word for books",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "běn",
+                        "chinese_simplified": "本",
+                        "chinese_traditional": "本"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "006",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "you're welcome; don't be polite",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "bú kèqi",
+                        "chinese_simplified": "不客气",
+                        "chinese_traditional": "不客氣"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "007",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "no; not",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "bù",
+                        "chinese_simplified": "不",
+                        "chinese_traditional": "不"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "008",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "dish (type of food); vegetables",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "cài",
+                        "chinese_simplified": "菜",
+                        "chinese_traditional": "菜"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "009",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "tea",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "chá",
+                        "chinese_simplified": "茶",
+                        "chinese_traditional": "茶"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "010",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "eat",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "chī",
+                        "chinese_simplified": "吃",
+                        "chinese_traditional": "吃"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "011",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "taxi; cab",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "chūzūchē",
+                        "chinese_simplified": "出租车",
+                        "chinese_traditional": "出租車"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "012",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "make a phone call",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "dǎ diànhuà",
+                        "chinese_simplified": "打电话",
+                        "chinese_traditional": "打電話"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "013",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "big; large",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "dà",
+                        "chinese_simplified": "大",
+                        "chinese_traditional": "大"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "014",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "indicates possession, like adding 's to a noun",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "de",
+                        "chinese_simplified": "的",
+                        "chinese_traditional": "的"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "015",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "a dot; a little; o'clock",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "diǎn",
+                        "chinese_simplified": "点",
+                        "chinese_traditional": "點"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "016",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "computer",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "diànnǎo",
+                        "chinese_simplified": "电脑",
+                        "chinese_traditional": "電腦"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "017",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "television; TV",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "diànshì",
+                        "chinese_simplified": "电视",
+                        "chinese_traditional": "電視"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "018",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "movie; film",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "diànyǐng",
+                        "chinese_simplified": "电影",
+                        "chinese_traditional": "電影"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "019",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "things; stuff",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "dōngxi",
+                        "chinese_simplified": "东西",
+                        "chinese_traditional": "東西"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "020",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "all; both",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "dōu",
+                        "chinese_simplified": "都",
+                        "chinese_traditional": "都"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "021",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "to read; to study",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "dú",
+                        "chinese_simplified": "读",
+                        "chinese_traditional": "讀"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "022",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "sorry",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "duìbuqǐ",
+                        "chinese_simplified": "对不起",
+                        "chinese_traditional": "對不起"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "023",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "many",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "duō",
+                        "chinese_simplified": "多",
+                        "chinese_traditional": "多"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "024",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "how much?; how many?",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "duōshao",
+                        "chinese_simplified": "多少",
+                        "chinese_traditional": "多少"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "025",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "son",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "érzi",
+                        "chinese_simplified": "儿子",
+                        "chinese_traditional": "兒子"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "026",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "two",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "èr",
+                        "chinese_simplified": "二",
+                        "chinese_traditional": "二"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "027",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "restaurant; hotel",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "fàndiàn",
+                        "chinese_simplified": "饭店",
+                        "chinese_traditional": "飯店"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "028",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "airplane",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "fēijī",
+                        "chinese_simplified": "飞机",
+                        "chinese_traditional": "飛機"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "029",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "minute; (measure word for time)",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "fēnzhōng",
+                        "chinese_simplified": "分钟",
+                        "chinese_traditional": "分鐘"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "030",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "happy; glad",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "gāoxìng",
+                        "chinese_simplified": "高兴",
+                        "chinese_traditional": "高興"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "031",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "general measure word",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "ge",
+                        "chinese_simplified": "个",
+                        "chinese_traditional": "個"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "032",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "work; a job",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "gōngzuò",
+                        "chinese_simplified": "工作",
+                        "chinese_traditional": "工作"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "033",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "dog",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "gǒu",
+                        "chinese_simplified": "狗",
+                        "chinese_traditional": "狗"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "034",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "Chinese language",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "Hànyǔ",
+                        "chinese_simplified": "汉语",
+                        "chinese_traditional": "漢語"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "035",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "good",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "hǎo",
+                        "chinese_simplified": "好",
+                        "chinese_traditional": "好"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "036",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "number; day of a month",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "hào",
+                        "chinese_simplified": "号",
+                        "chinese_traditional": "號"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "037",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "to drink",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "hē",
+                        "chinese_simplified": "喝",
+                        "chinese_traditional": "喝"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "038",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "and; with",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "hé",
+                        "chinese_simplified": "和",
+                        "chinese_traditional": "和"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "039",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "very; quite",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "hěn",
+                        "chinese_simplified": "很",
+                        "chinese_traditional": "很"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "040",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "back; behind",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "hòumian",
+                        "chinese_simplified": "后面",
+                        "chinese_traditional": "后面"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "041",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "to return; to reply; to go back",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "huí",
+                        "chinese_simplified": "回",
+                        "chinese_traditional": "回"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "042",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "know how to",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "huì",
+                        "chinese_simplified": "会",
+                        "chinese_traditional": "會"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "043",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "how many; several; a few",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "jǐ",
+                        "chinese_simplified": "几",
+                        "chinese_traditional": "幾"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "044",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "family; home",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "jiā",
+                        "chinese_simplified": "家",
+                        "chinese_traditional": "家"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "045",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "to be called",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "jiào",
+                        "chinese_simplified": "叫",
+                        "chinese_traditional": "叫"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "046",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "today",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "jīntiān",
+                        "chinese_simplified": "今天",
+                        "chinese_traditional": "今天"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "047",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "nine",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "jiǔ",
+                        "chinese_simplified": "九",
+                        "chinese_traditional": "九"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "048",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "to open; to start; to operate (a vehicle)",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "kāi",
+                        "chinese_simplified": "开",
+                        "chinese_traditional": "開"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "049",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "see; look at; to watch",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "kàn",
+                        "chinese_simplified": "看",
+                        "chinese_traditional": "看"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "050",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "see; catch sight of",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "kànjiàn",
+                        "chinese_simplified": "看见",
+                        "chinese_traditional": "看見"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "051",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "lump; piece; sum of money",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "kuài",
+                        "chinese_simplified": "块",
+                        "chinese_traditional": "塊"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "052",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "come; arrive; ever since; next",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "lái",
+                        "chinese_simplified": "来",
+                        "chinese_traditional": "來"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "053",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "teacher",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "lǎoshī",
+                        "chinese_simplified": "老师",
+                        "chinese_traditional": "老師"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "054",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "indicates a completed or finished action",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "le",
+                        "chinese_simplified": "了",
+                        "chinese_traditional": "了"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "055",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "cold",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "lěng",
+                        "chinese_simplified": "冷",
+                        "chinese_traditional": "冷"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "056",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "inside; Chinese mile (~.5 km)",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "lǐ",
+                        "chinese_simplified": "里",
+                        "chinese_traditional": "裡"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "057",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "six",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "liù",
+                        "chinese_simplified": "六",
+                        "chinese_traditional": "六"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "058",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "mom; mum",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "māma",
+                        "chinese_simplified": "妈妈",
+                        "chinese_traditional": "媽媽"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "059",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "indicates a yes/no question (added to a statement)",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "ma",
+                        "chinese_simplified": "吗",
+                        "chinese_traditional": "嗎"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "060",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "to buy",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "mǎi",
+                        "chinese_simplified": "买",
+                        "chinese_traditional": "買"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "061",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "cat",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "māo",
+                        "chinese_simplified": "猫",
+                        "chinese_traditional": "貓"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "062",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "it doesn't matter; never mind",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "méi guānxi",
+                        "chinese_simplified": "没关系",
+                        "chinese_traditional": "沒關系"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "063",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "not have; there is not",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "méiyǒu",
+                        "chinese_simplified": "没有",
+                        "chinese_traditional": "沒有"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "064",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "(cooked) rice",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "mǐfàn",
+                        "chinese_simplified": "米饭",
+                        "chinese_traditional": "米飯"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "065",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "tomorrow",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "míngtiān",
+                        "chinese_simplified": "明天",
+                        "chinese_traditional": "明天"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "066",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "name",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "míngzi",
+                        "chinese_simplified": "名字",
+                        "chinese_traditional": "名字"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "067",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "which; how",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "nǎa",
+                        "chinese_simplified": "哪",
+                        "chinese_traditional": "哪"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "068",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "where? (Beijing accent)",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "nǎr",
+                        "chinese_simplified": "哪儿",
+                        "chinese_traditional": "哪兒"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "069",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "that; then",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "nà",
+                        "chinese_simplified": "那",
+                        "chinese_traditional": "那"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "070",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "indicates a question; how about...?;",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "ne",
+                        "chinese_simplified": "呢",
+                        "chinese_traditional": "呢"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "071",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "can; be able",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "néng",
+                        "chinese_simplified": "能",
+                        "chinese_traditional": "能"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "072",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "you (singular)",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "nǐ",
+                        "chinese_simplified": "你",
+                        "chinese_traditional": "你"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "073",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "year",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "nián",
+                        "chinese_simplified": "年",
+                        "chinese_traditional": "年"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "074",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "daughter",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "nǚ'ér",
+                        "chinese_simplified": "女儿",
+                        "chinese_traditional": "女兒"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "075",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "friend",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "péngyou",
+                        "chinese_simplified": "朋友",
+                        "chinese_traditional": "朋友"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "076",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "pretty; beautiful",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "piàoliang",
+                        "chinese_simplified": "漂亮",
+                        "chinese_traditional": "漂亮"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "077",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "apple",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "píngguǒ",
+                        "chinese_simplified": "苹果",
+                        "chinese_traditional": "蘋果"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "078",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "seven",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "qī",
+                        "chinese_simplified": "七",
+                        "chinese_traditional": "七"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "079",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "money; coin",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "qián",
+                        "chinese_simplified": "钱",
+                        "chinese_traditional": "錢"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "080",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "in front",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "qiánmiàn",
+                        "chinese_simplified": "前面",
+                        "chinese_traditional": "前面"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "081",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "please; invite; to treat someone to something",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "qǐng",
+                        "chinese_simplified": "请",
+                        "chinese_traditional": "請"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "082",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "go; to leave",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "qù",
+                        "chinese_simplified": "去",
+                        "chinese_traditional": "去"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "083",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "heat; hot",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "rè",
+                        "chinese_simplified": "热",
+                        "chinese_traditional": "熱"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "084",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "person; man; people",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "rén",
+                        "chinese_simplified": "人",
+                        "chinese_traditional": "人"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "085",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "recognize; know (a person)",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "rènshi",
+                        "chinese_simplified": "认识",
+                        "chinese_traditional": "認識"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "086",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "three",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "sān",
+                        "chinese_simplified": "三",
+                        "chinese_traditional": "三"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "087",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "shop; store",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "shāngdiàn",
+                        "chinese_simplified": "商店",
+                        "chinese_traditional": "商店"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "088",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "above; up",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "shàng",
+                        "chinese_simplified": "上",
+                        "chinese_traditional": "上"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "089",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "late morning (before noon)",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "shàngwǔ",
+                        "chinese_simplified": "上午",
+                        "chinese_traditional": "上午"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "090",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "few; little",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "shǎo",
+                        "chinese_simplified": "少",
+                        "chinese_traditional": "少"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "091",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "who",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "shéi",
+                        "chinese_simplified": "谁",
+                        "chinese_traditional": "誰"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "092",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "what? (replaces the noun to turn a statement into a question)",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "shénme",
+                        "chinese_simplified": "什么",
+                        "chinese_traditional": "什麼"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "093",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "ten",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "shí",
+                        "chinese_simplified": "十",
+                        "chinese_traditional": "十"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "094",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "time",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "shíhou",
+                        "chinese_simplified": "时候",
+                        "chinese_traditional": "時候"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "095",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "be; is; are; am",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "shì",
+                        "chinese_simplified": "是",
+                        "chinese_traditional": "是"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "096",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "book; letter",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "shū",
+                        "chinese_simplified": "书",
+                        "chinese_traditional": "書"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "097",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "water",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "shuǐ",
+                        "chinese_simplified": "水",
+                        "chinese_traditional": "水"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "098",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "fruit",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "shuǐguǒ",
+                        "chinese_simplified": "水果",
+                        "chinese_traditional": "水果"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "099",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "to sleep; go to bed",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "shuì jiào",
+                        "chinese_simplified": "睡觉",
+                        "chinese_traditional": "睡覺"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "100",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "speak",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "shuō",
+                        "chinese_simplified": "说",
+                        "chinese_traditional": "說"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "101",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "four",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "sì",
+                        "chinese_simplified": "四",
+                        "chinese_traditional": "四"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "102",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "years old; age",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "suì",
+                        "chinese_simplified": "岁",
+                        "chinese_traditional": "歲"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "103",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "he; him",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "tā",
+                        "chinese_simplified": "他",
+                        "chinese_traditional": "他"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "104",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "she",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "tā",
+                        "chinese_simplified": "她",
+                        "chinese_traditional": "她"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "105",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "too (much)",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "tài",
+                        "chinese_simplified": "太",
+                        "chinese_traditional": "太"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "106",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "weather",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "tiānqì",
+                        "chinese_simplified": "天气",
+                        "chinese_traditional": "天氣"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "107",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "listen; hear",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "tīng",
+                        "chinese_simplified": "听",
+                        "chinese_traditional": "聽"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "108",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "fellow student; schoolmate",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "tóngxué",
+                        "chinese_simplified": "同学",
+                        "chinese_traditional": "同學"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "109",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "hello (on the phone)",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "wèi",
+                        "chinese_simplified": "喂",
+                        "chinese_traditional": "喂"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "110",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "I; me",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "wǒ",
+                        "chinese_simplified": "我",
+                        "chinese_traditional": "我"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "111",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "we; us",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "wǒmen",
+                        "chinese_simplified": "我们",
+                        "chinese_traditional": "我們"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "112",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "five",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "wǔ",
+                        "chinese_simplified": "五",
+                        "chinese_traditional": "五"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "113",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "to like",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "xǐhuan",
+                        "chinese_simplified": "喜欢",
+                        "chinese_traditional": "喜歡"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "114",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "fall; below",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "xià",
+                        "chinese_simplified": "下",
+                        "chinese_traditional": "下"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "115",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "afternoon",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "xiàwǔ",
+                        "chinese_simplified": "下午",
+                        "chinese_traditional": "下午"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "116",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "to rain",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "xiàyǔ",
+                        "chinese_simplified": "下雨",
+                        "chinese_traditional": "下雨"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "117",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "Mr.; Sir",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "xiānsheng",
+                        "chinese_simplified": "先生",
+                        "chinese_traditional": "先生"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "118",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "now",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "xiànzài",
+                        "chinese_simplified": "现在",
+                        "chinese_traditional": "現在"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "119",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "think; believe; suppose; would like to",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "xiǎng",
+                        "chinese_simplified": "想",
+                        "chinese_traditional": "想"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "120",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "small; young",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "xiǎo",
+                        "chinese_simplified": "小",
+                        "chinese_traditional": "小"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "121",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "young lady; miss; Ms.",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "xiǎojie",
+                        "chinese_simplified": "小姐",
+                        "chinese_traditional": "小姐"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "122",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "some; few; several",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "xiē",
+                        "chinese_simplified": "些",
+                        "chinese_traditional": "些"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "123",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "to write; to compose",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "xiě",
+                        "chinese_simplified": "写",
+                        "chinese_traditional": "寫"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "124",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "thank you",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "xièxie",
+                        "chinese_simplified": "谢谢",
+                        "chinese_traditional": "謝謝"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "125",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "week",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "xīngqī",
+                        "chinese_simplified": "星期",
+                        "chinese_traditional": "星期"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "126",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "student",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "xuésheng",
+                        "chinese_simplified": "学生",
+                        "chinese_traditional": "學生"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "127",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "learn; to study",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "xuéxí",
+                        "chinese_simplified": "学习",
+                        "chinese_traditional": "學習"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "128",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "school",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "xuéxiào",
+                        "chinese_simplified": "学校",
+                        "chinese_traditional": "學校"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "129",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "one; once; a",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "yī",
+                        "chinese_simplified": "一",
+                        "chinese_traditional": "一"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "130",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "clothes",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "yīfu",
+                        "chinese_simplified": "衣服",
+                        "chinese_traditional": "衣服"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "131",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "doctor",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "yīshēng",
+                        "chinese_simplified": "医生",
+                        "chinese_traditional": "醫生"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "132",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "hospital",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "yīyuàn",
+                        "chinese_simplified": "医院",
+                        "chinese_traditional": "醫院"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "133",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "chair",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "yǐzi",
+                        "chinese_simplified": "椅子",
+                        "chinese_traditional": "椅子"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "134",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "a bit; a few",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "yìdiǎnr",
+                        "chinese_simplified": "一点儿",
+                        "chinese_traditional": "一點兒"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "135",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "have",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "yǒu",
+                        "chinese_simplified": "有",
+                        "chinese_traditional": "有"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "136",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "moon; month",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "yuè",
+                        "chinese_simplified": "月",
+                        "chinese_traditional": "月"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "137",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "at; on; in; indicates an action in progress",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "zài",
+                        "chinese_simplified": "在",
+                        "chinese_traditional": "在"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "138",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "goodbye; see you later",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "zàijiàn",
+                        "chinese_simplified": "再见",
+                        "chinese_traditional": "再見"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "139",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "how?",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "zěnme",
+                        "chinese_simplified": "怎么",
+                        "chinese_traditional": "怎麼"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "140",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "how about?; how is/was it?",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "zěnmeyàng",
+                        "chinese_simplified": "怎么样",
+                        "chinese_traditional": "怎麼樣"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "141",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "this",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "zhè",
+                        "chinese_simplified": "这",
+                        "chinese_traditional": "這"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "142",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "China",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "Zhōngguó",
+                        "chinese_simplified": "中国",
+                        "chinese_traditional": "中國"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "143",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "noon; midday",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "zhōngwǔ",
+                        "chinese_simplified": "中午",
+                        "chinese_traditional": "中午"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "144",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "to live; reside; to stop",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "zhù",
+                        "chinese_simplified": "住",
+                        "chinese_traditional": "住"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "145",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "table; desk",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "zhuōzi",
+                        "chinese_simplified": "桌子",
+                        "chinese_traditional": "桌子"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "146",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "letter; character",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "zì",
+                        "chinese_simplified": "字",
+                        "chinese_traditional": "字"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "147",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "yesterday",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "zuótiān",
+                        "chinese_simplified": "昨天",
+                        "chinese_traditional": "昨天"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "148",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "do; make",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "zuò",
+                        "chinese_simplified": "做",
+                        "chinese_traditional": "做"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "identifier": "149",
+                "learned": false,
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": "sit",
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": "zuò",
+                        "chinese_simplified": "坐",
+                        "chinese_traditional": "坐"
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        }
+    ]
 }

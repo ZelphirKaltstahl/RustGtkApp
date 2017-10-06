@@ -1,9 +1,14 @@
-//#[macro_use] extern crate serde_derive;
 extern crate serde;
+#[macro_use]
+extern crate serde_derive;
+extern crate serde_json;
+
+use std::env;
+use std::fs::File;
+use std::io::prelude::*;
 
 extern crate gtk;
 use self::gtk::prelude::*;
-//use self::gtk::Type::*;
 use self::gtk::*;
 /*{
     Alignment,
@@ -24,10 +29,12 @@ use self::gtk::*;
 mod voc_notebook;
 use voc_notebook::{VocNotebook};
 
+mod voc_treeview;
+use voc_treeview::{VocTreeView};
+
 mod csv_reading_and_writing;
 
 mod vocabulary;
-use vocabulary::{Vocabulary, Metadata, Word, WordMetadata, WordTranslation};
 
 macro_rules! hashmap {
     ($( $key: expr => $val: expr ),*) => {{
@@ -38,7 +45,28 @@ macro_rules! hashmap {
 }
 
 fn main() {
+    let vocabulary_data: Vec<vocabulary::Vocabulary> = read_data_files();
+    for voc in vocabulary_data {
+        println!("{:?}", voc);
+    }
     run_gtk_example();
+}
+
+pub fn read_data_files() -> Vec<vocabulary::Vocabulary> {
+    let mut data: Vec<vocabulary::Vocabulary> = Vec::new();
+    let filepaths: Vec<&str> = vec!("data/hsk-1-updated.json");
+
+    for filepath in filepaths {
+        let mut f = File::open(filepath).expect("file not found");
+        let mut contents = String::new();
+        f.read_to_string(&mut contents).expect("something went wrong reading the file");
+        println!("{}", contents);
+
+        let mut serde_value: vocabulary::Vocabulary = serde_json::from_str(&contents)
+            .unwrap();
+        data.push(serde_value);
+    }
+    data
 }
 
 pub fn run_gtk_example() {
@@ -108,22 +136,36 @@ pub fn create_file_menu_item() -> MenuItem {
 
 pub fn create_notebook() -> VocNotebook {
     let mut notebook = VocNotebook::new();
-    let tab_titles : Vec<&str> = vec!(
-        "Library", "Training", "Statistics", "not needed");
 
-    for tab_title in tab_titles {
-        let label = gtk::Label::new(tab_title);
-        let index : u32 = notebook.create_tab(tab_title, label.upcast());
-        println!("adding a tab with index {}", index);
-    }
+    let voc_tree_view: VocTreeView = create_library_treeview();
 
-    let tab_content = notebook.notebook
-        .get_nth_page(Some(3))
-        .expect("could not find such notebook page");
-    // consider unwrap_or("something")
+    // add library tree view
+    let library_tab_index : u32 = notebook.create_tab(
+        "Library", voc_tree_view.tree_view.upcast());
+    let training_tab_index : u32 = notebook.create_tab(
+        "Training",
+        gtk::Label::new("Training").upcast());
+    let statistics_tab_index : u32 = notebook.create_tab(
+        "Training",
+        gtk::Label::new("Training").upcast());
 
-    println!("{:?}", tab_content);
+    let tree_store: TreeStore = voc_tree_view.model;
+    tree_store.insert_with_values(None,
+                                  None,
+                                  &[0],
+                                  &[&"I'm a child node"]);
+    tree_store.insert_with_values(None,
+                                  None,
+                                  &[0],
+                                  &[&"I'm a child node"]);
+
     notebook
+}
+
+pub fn create_library_treeview() -> VocTreeView {
+    let voc_tree_view: VocTreeView = VocTreeView::new();
+    voc_tree_view.tree_view.set_headers_visible(true);
+    voc_tree_view
 }
 
 pub fn initialize_gtk() {

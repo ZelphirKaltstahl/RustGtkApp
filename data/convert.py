@@ -11,11 +11,39 @@ def convert(json_content):
     vocabulary_metadata = json_content["metadata"]
     del vocabulary_metadata["learned_percentage"]
     del vocabulary_metadata["count"]
+    vocabulary_metadata["first_language_name"] = "English"
+    vocabulary_metadata["first_language_phonetic_script_name"] = "IPA"
+    vocabulary_metadata["second_language_name"] = "Chinese (simplified)"
+    vocabulary_metadata["second_language_2_name"] = "Chinese (traditional)"
+    vocabulary_metadata["second_language_phonetic_script_name"] = "Pīnyīn"
+    vocabulary_metadata["second_language_phonetic_script_2_name"] = "Pīnyīn numbered"
 
     words = []
-    for ind, word in enumerate(json_content["words"]):
-        print(f"parsing word: {ind}")
-        # words.append()
+    for ind in json_content["words"]:
+        word = json_content["words"][ind]
+        print(f"parsing word: {word}")
+        words.append({
+            "metadata": {
+                "identifier": ind,
+                "learned": word["metadata"]["learned"],
+                "relevance_level": 5,
+                "tags": []
+            },
+            "meanings": [
+                {
+                    "translation": {
+                        "english": word["translation_data"]["english"],
+                        "english_phonetic_script": "(add IPA)",
+                        "pinyin": word["translation_data"]["pinyin"],
+                        "chinese_simplified": word["translation_data"]["simplified"],
+                        "chinese_traditional": word["translation_data"]["traditional"]
+                    },
+                    "description": [],
+                    "examples": []
+                }
+            ]
+        })
+        pass
 
     updated_vocabulary = {
         "metadata": vocabulary_metadata,
