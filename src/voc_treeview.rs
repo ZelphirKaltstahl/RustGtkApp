@@ -1,6 +1,7 @@
 extern crate pango;
 extern crate gtk;
 
+use std;
 use self::gtk::prelude::*;
 use self::gtk::{
     CellRendererText,
@@ -14,32 +15,16 @@ use self::gtk::{
 
 use vocabulary::{Vocabulary};
 
-// use vocabulary::Vocabulary;
-
 pub struct VocTreeView {
     pub tree_view: TreeView,
     pub model: TreeStore,
 }
-
-// use std::fmt;
-// impl fmt::Debug for gtk::ToValue {
-//     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-//         write!(f, "Hi: {}", self.id)
-//     }
-// }
 
 impl VocTreeView {
     pub fn new() -> VocTreeView {
         let column_types = [String::static_type()];
         let model = TreeStore::new(&column_types);
         let tree_view = TreeView::new_with_model(&model);
-
-        // let renderer = CellRendererText::new();
-        // let column = TreeViewColumn::new();
-        // column.set_title("Column Title");
-        // column.pack_start(&renderer, false);
-        // column.add_attribute(&renderer, "text", 0);
-        // tree_view.append_column(&column);
 
         VocTreeView {
             tree_view: tree_view,
@@ -54,32 +39,51 @@ impl VocTreeView {
                             String::static_type()];
         let model = TreeStore::new(&column_types);
         let mut tree_view = TreeView::new_with_model(&model);
+        tree_view.get_selection().set_mode(gtk::SelectionMode::Multiple);
 
-        for lang_name in vec!(vocabulary.metadata.first_language_name,
-                              vocabulary.metadata.first_language_phonetic_script_name,
-                              vocabulary.metadata.second_language_name,
-                              vocabulary.metadata.second_language_phonetic_script_name) {
-            VocTreeView::append_text_column(&mut tree_view, lang_name);
+        let lang_ids: Vec<String> = vocabulary.metadata.language_id_to_name.iter().map(
+            |(key, _value)| key.clone()
+        ).collect();
+
+        let lang_names: Vec<String> = vocabulary.metadata.language_id_to_name.iter().map(
+            |(_key, value)| value.clone()
+        ).collect();
+
+        let mut column_indices: Vec<u32> = Vec::new();
+        for (index, _lang_name) in lang_names.into_iter().enumerate() {
+            column_indices.push(index as u32);
+        }
+
+        // let mut column_indices = &[0; lang_ids.len()];
+        // for (index, lang_name) in lang_names.iter().enumerate() {
+        //     column_indices.push(index as u32);
+        // }
+
+        assert!(lang_ids.len() == lang_names.len(),
+                format!("number of language ids is not equal to number of language names.{}",
+                        format!("lang_ids has length: {} lang_names has length: {}",
+                                lang_ids.len(),
+                                lang_names.len())));
+
+        for index in 0..lang_ids.len() {
+            VocTreeView::append_text_column(
+                &mut tree_view,
+                vocabulary.metadata.language_id_to_name.get(&lang_ids[index]).unwrap().clone(),
+                index as i32)
         }
 
         for word in vocabulary.words {
             for meaning in word.meanings {
                 let mut items: Vec<String> = Vec::new();
-                items.push(
-                    meaning.translation.get("english").unwrap().to_string());
-                items.push(
-                    meaning.translation.get("english_phonetic_script").unwrap().to_string());
-                items.push(
-                    meaning.translation.get("pinyin").unwrap().to_string());
-                items.push(
-                    meaning.translation.get("chinese_simplified").unwrap().to_string());
-                // for (_attr, item) in meaning.translation {
-                //     items.push(item);
-                // }
-                // println!("{:?}", items);
-                assert!(items.len() == 4,
+                for index in 0..lang_ids.len() {
+                    items.push(meaning.translation.get(&lang_ids[index])
+                               .expect("Not as many translation attributes as lang_ids defined in the metadata of the JSON. Are you sure the JSON is valid?")
+                               .clone());
+                }
+
+                assert!(items.len() == lang_ids.len(),
                         "items length was {} with items being {:?}", items.len(), items);
-                let columns: &[u32] = &[0,1,2,3];
+                let columns: &[u32] = &[];
                 VocTreeView::add_to_tree_store(&model, columns, items);
             }
         }
@@ -100,17 +104,14 @@ impl VocTreeView {
     }
 
     pub fn string_to_ToValue(values_vector: &[String]) -> Vec<&gtk::ToValue> {
-        values_vector.into_iter().map(
+        let res = values_vector.into_iter().map(
             |item| item as &gtk::ToValue
-        ).collect()
+        ).collect();
+        // println!("{:?}", DebugPrintableToValue(res));  // this print seems impossible
+        res
     }
 
-    // pub fn strings_to_ampersand_str<'res_ref>(values_vector: Vec<String>) -> Vec<&'res_ref str> {
-    //     let append_values: Vec<_> = values_vector.iter().map(|x| &x[..]).collect();
-    //     append_values
-    // }
-
-    pub fn append_text_column(tree_view: &mut TreeView, column_name: String) {
+    pub fn append_text_column(tree_view: &mut TreeView, column_name: String, column_index: i32) {
         let column = TreeViewColumn::new();
         let cell_renderer = CellRendererText::new();
         cell_renderer.set_property_ellipsize(pango::EllipsizeMode::End);
@@ -122,7 +123,7 @@ impl VocTreeView {
         column.set_title(&column_name);
 
         column.pack_start(&cell_renderer, true);
-        column.add_attribute(&cell_renderer, "text", 0);
+        column.add_attribute(&cell_renderer, "text", column_index);
 
         tree_view.append_column(&column);
     }
@@ -136,3 +137,13 @@ impl VocTreeView {
         self.tree_view.append_column(&column);
     }
 }
+
+// use std::fmt;
+// use std::fmt::Debug;
+// pub struct DebugPrintableToValue(pub gtk::ToValue);
+
+// impl Debug for DebugPrintableToValue {
+//     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+//         write!(f, "gtk::ToValue id: {}", self)
+//     }
+// }

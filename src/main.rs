@@ -138,10 +138,6 @@ pub fn create_notebook(vocabulary: Vocabulary) -> VocNotebook {
 
     let voc_tree_view: VocTreeView = create_library_treeview(vocabulary);
 
-    // let scrolled_voc_tree_view = gtk::ScrolledWindow::new(None, None);
-    // scrolled_voc_tree_view.set_policy(gtk::PolicyType::Automatic, gtk::PolicyType::Automatic);
-    // scrolled_voc_tree_view.add(&voc_tree_view.tree_view);
-
     // add library tree view
     let library_tab_index : u32 = notebook.create_tab(
         "Library",

@@ -11,12 +11,14 @@ def convert(json_content):
     vocabulary_metadata = json_content["metadata"]
     del vocabulary_metadata["learned_percentage"]
     del vocabulary_metadata["count"]
-    vocabulary_metadata["first_language_name"] = "English"
-    vocabulary_metadata["first_language_phonetic_script_name"] = "IPA"
-    vocabulary_metadata["second_language_name"] = "Chinese (simplified)"
-    vocabulary_metadata["second_language_2_name"] = "Chinese (traditional)"
-    vocabulary_metadata["second_language_phonetic_script_name"] = "Pīnyīn"
-    vocabulary_metadata["second_language_phonetic_script_2_name"] = "Pīnyīn numbered"
+    vocabulary_metadata["language_id_to_name"] = {
+        "english": "English",
+        "english_phonetic_script": "IPA",
+        "chinese_simplified": "Chinese (simplified)",
+        "chinese_traditional": "Chinese (traditional)",
+        "pinyin": "Pīnyīn",
+        "pinyin_numbered": "Pīnyīn numbered"
+    }
 
     words = []
     for ind in json_content["words"]:
@@ -35,6 +37,7 @@ def convert(json_content):
                         "english": word["translation_data"]["english"],
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": word["translation_data"]["pinyin"],
+                        "pinyin_numbered": "",
                         "chinese_simplified": word["translation_data"]["simplified"],
                         "chinese_traditional": word["translation_data"]["traditional"]
                     },

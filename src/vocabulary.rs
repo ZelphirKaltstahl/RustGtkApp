@@ -15,10 +15,7 @@ pub struct Vocabulary {
 pub struct Metadata {
     pub identifier: String,
     pub source_note: String,
-    pub first_language_name: String,
-    pub first_language_phonetic_script_name: String,
-    pub second_language_name: String,
-    pub second_language_phonetic_script_name: String
+    pub language_id_to_name: HashMap<String, String>
 }
 
 #[derive(Debug, Deserialize, Serialize)]

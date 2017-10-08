@@ -1,13 +1,15 @@
 {
     "metadata": {
         "identifier": "HSK2",
-        "source_note": "vocabulary taken from http://data.hskhsk.com/lists/ created by Alan Davies, alan@hskhsk.com 2013-2017, schema and metadata created by zelphirkaltstahl@gmail.com 2017",
-        "first_language_name": "English",
-        "first_language_phonetic_script_name": "IPA",
-        "second_language_name": "Chinese (simplified)",
-        "second_language_2_name": "Chinese (traditional)",
-        "second_language_phonetic_script_name": "Pīnyīn",
-        "second_language_phonetic_script_2_name": "Pīnyīn numbered"
+        "source_note": "vocabulary taken from http://data.hskhsk.com/lists/ created by Alan Davies, alan@hskhsk.com 2013-2017",
+        "language_id_to_name": {
+            "english": "English",
+            "english_phonetic_script": "IPA",
+            "chinese_simplified": "Chinese (simplified)",
+            "chinese_traditional": "Chinese (traditional)",
+            "pinyin": "Pīnyīn",
+            "pinyin_numbered": "Pīnyīn numbered"
+        }
     },
     "words": [
         {
@@ -23,6 +25,7 @@
                         "english": "particle indicating polite suggestion; | onomatopoeia | bar (serving drinks, providing internet access, etc.)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "ba",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "吧",
                         "chinese_traditional": "吧"
                     },
@@ -44,6 +47,7 @@
                         "english": "white; snowy; pure; bright; empty (Kangxi radical 106)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "bái",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "白",
                         "chinese_traditional": "白"
                     },
@@ -65,6 +69,7 @@
                         "english": "hundred",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "bǎi",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "百",
                         "chinese_traditional": "百"
                     },
@@ -86,6 +91,7 @@
                         "english": "help; assist; aid",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "bāngzhù",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "帮助",
                         "chinese_traditional": "幫助"
                     },
@@ -107,6 +113,7 @@
                         "english": "newspaper",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "bàozhǐ",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "报纸",
                         "chinese_traditional": "報紙"
                     },
@@ -128,6 +135,7 @@
                         "english": "compare; (indicates comparison) (Kangxi radical 81); to gesticulate as one talks",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "bǐ",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "比",
                         "chinese_traditional": "比"
                     },
@@ -149,6 +157,7 @@
                         "english": "don't do something; don't | depart; | other; difference; distinguish",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "bié",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "别",
                         "chinese_traditional": "別"
                     },
@@ -170,6 +179,7 @@
                         "english": "guesthouse; hotel",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "bīnguǎn",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "宾馆",
                         "chinese_traditional": "賓館"
                     },
@@ -191,6 +201,7 @@
                         "english": "long; length | grow; chief (Kangxi radical 168)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "cháng, zhǎng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "长",
                         "chinese_traditional": "長"
                     },
@@ -212,6 +223,7 @@
                         "english": "sing (a song)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "chànggē",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "唱歌",
                         "chinese_traditional": "唱歌"
                     },
@@ -233,6 +245,7 @@
                         "english": "go out; occur",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "chū",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "出",
                         "chinese_traditional": "出"
                     },
@@ -254,6 +267,7 @@
                         "english": "to wear; put on; penetrate",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "chuān",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "穿",
                         "chinese_traditional": "穿"
                     },
@@ -275,6 +289,7 @@
                         "english": "(mw for number of times of occurrence); nth; order",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "cì",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "次",
                         "chinese_traditional": "次"
                     },
@@ -296,6 +311,7 @@
                         "english": "from; obey; observe",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "cóng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "从",
                         "chinese_traditional": "從"
                     },
@@ -317,6 +333,7 @@
                         "english": "mistake; error; blunder; miss an opportunity",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "cuò",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "错",
                         "chinese_traditional": "錯"
                     },
@@ -338,6 +355,7 @@
                         "english": "play basketball",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "dǎ lánqiú",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "打篮球",
                         "chinese_traditional": "打籃球"
                     },
@@ -359,6 +377,7 @@
                         "english": "everyone",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "dàjiā",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "大家",
                         "chinese_traditional": "大家"
                     },
@@ -380,6 +399,7 @@
                         "english": "arrive (at a place); until (a time)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "dào",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "到",
                         "chinese_traditional": "到"
                     },
@@ -401,6 +421,7 @@
                         "english": "(complement particle)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "de",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "得",
                         "chinese_traditional": "得"
                     },
@@ -422,6 +443,7 @@
                         "english": "to wait; rank; equal; etc.",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "děng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "等",
                         "chinese_traditional": "等"
                     },
@@ -443,6 +465,7 @@
                         "english": "younger brother",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "dìdi",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "弟弟",
                         "chinese_traditional": "弟弟"
                     },
@@ -464,6 +487,7 @@
                         "english": "first; number 1",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "dìyī",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "第一",
                         "chinese_traditional": "第一"
                     },
@@ -485,6 +509,7 @@
                         "english": "understand; know",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "dǒng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "懂",
                         "chinese_traditional": "懂"
                     },
@@ -506,6 +531,7 @@
                         "english": "correct; a pair; to face; be opposite; to; towards",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "duì",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "对",
                         "chinese_traditional": "對"
                     },
@@ -527,6 +553,7 @@
                         "english": "room",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "fángjiān",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "房间",
                         "chinese_traditional": "房間"
                     },
@@ -548,6 +575,7 @@
                         "english": "extremely; extraordinary; very",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "fēicháng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "非常",
                         "chinese_traditional": "非常"
                     },
@@ -569,6 +597,7 @@
                         "english": "waiter/waitress; server; attendant",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "fúwùyuán",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "服务员",
                         "chinese_traditional": "服務員"
                     },
@@ -590,6 +619,7 @@
                         "english": "high; tall (Kangxi radical 189)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "gāo",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "高",
                         "chinese_traditional": "高"
                     },
@@ -611,6 +641,7 @@
                         "english": "to tell; inform",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "gàosu",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "告诉",
                         "chinese_traditional": "告訴"
                     },
@@ -632,6 +663,7 @@
                         "english": "older brother",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "gēge",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "哥哥",
                         "chinese_traditional": "哥哥"
                     },
@@ -653,6 +685,7 @@
                         "english": "to give; to grant; (passive particle)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "gěi",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "给",
                         "chinese_traditional": "給"
                     },
@@ -674,6 +707,7 @@
                         "english": "(public) bus",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "gōnggòng qìchē",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "公共汽车",
                         "chinese_traditional": "公共汽車"
                     },
@@ -695,6 +729,7 @@
                         "english": "company; corporation",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "gōngsī",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "公司",
                         "chinese_traditional": "公司"
                     },
@@ -716,6 +751,7 @@
                         "english": "expensive; noble; honorable; Guizhou province (abbreviation)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "guì",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "贵",
                         "chinese_traditional": "貴"
                     },
@@ -737,6 +773,7 @@
                         "english": "to pass; to cross; go over; (indicates a past experience)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "guò",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "过",
                         "chinese_traditional": "過"
                     },
@@ -758,6 +795,7 @@
                         "english": "still; yet; in addition; even",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "hái",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "还",
                         "chinese_traditional": "還"
                     },
@@ -779,6 +817,7 @@
                         "english": "child; children; son or daughter",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "háizi",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "孩子",
                         "chinese_traditional": "孩子"
                     },
@@ -800,6 +839,7 @@
                         "english": "tasty",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "hǎochī",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "好吃",
                         "chinese_traditional": "好吃"
                     },
@@ -821,6 +861,7 @@
                         "english": "black; dark (Kangxi radical 203); Heilongjiang province (abbreviation)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "hēi",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "黑",
                         "chinese_traditional": "黑"
                     },
@@ -842,6 +883,7 @@
                         "english": "red; symbol of success; bonus; popular",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "hóng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "红",
                         "chinese_traditional": "紅"
                     },
@@ -863,6 +905,7 @@
                         "english": "train station",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "huǒchēzhàn",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "火车站",
                         "chinese_traditional": "火車站"
                     },
@@ -884,6 +927,7 @@
                         "english": "airport; airfield",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "jīchǎng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "机场",
                         "chinese_traditional": "機場"
                     },
@@ -905,6 +949,7 @@
                         "english": "(chicken) egg",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "jīdàn",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "鸡蛋",
                         "chinese_traditional": "雞蛋"
                     },
@@ -926,6 +971,7 @@
                         "english": "(mw for things, clothes, and items)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "jiàn",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "件",
                         "chinese_traditional": "件"
                     },
@@ -947,6 +993,7 @@
                         "english": "classroom",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "jiàoshì",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "教室",
                         "chinese_traditional": "教室"
                     },
@@ -968,6 +1015,7 @@
                         "english": "older sister",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "jiějie",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "姐姐",
                         "chinese_traditional": "姐姐"
                     },
@@ -989,6 +1037,7 @@
                         "english": "to introduce; recommend; introduction",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "jièshào",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "介绍",
                         "chinese_traditional": "介紹"
                     },
@@ -1010,6 +1059,7 @@
                         "english": "enter; come in",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "jìn",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "进",
                         "chinese_traditional": "進"
                     },
@@ -1031,6 +1081,7 @@
                         "english": "near; close (to)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "jìn",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "近",
                         "chinese_traditional": "近"
                     },
@@ -1052,6 +1103,7 @@
                         "english": "then; at once; just; only; with regard to",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "jiù",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "就",
                         "chinese_traditional": "就"
                     },
@@ -1073,6 +1125,7 @@
                         "english": "feel; think",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "juéde",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "觉得",
                         "chinese_traditional": "覺得"
                     },
@@ -1094,6 +1147,7 @@
                         "english": "coffee",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "kāfēi",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "咖啡",
                         "chinese_traditional": "咖啡"
                     },
@@ -1115,6 +1169,7 @@
                         "english": "begin; to start; beginning",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "kāishǐ",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "开始",
                         "chinese_traditional": "開始"
                     },
@@ -1136,6 +1191,7 @@
                         "english": "test; exam; to give or take a test",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "kǎoshì",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "考试",
                         "chinese_traditional": "考試"
                     },
@@ -1157,6 +1213,7 @@
                         "english": "possible; maybe",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "kěnéng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "可能",
                         "chinese_traditional": "可能"
                     },
@@ -1178,6 +1235,7 @@
                         "english": "can; may; possible; okay",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "kěyǐ",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "可以",
                         "chinese_traditional": "可以"
                     },
@@ -1199,6 +1257,7 @@
                         "english": "class; subject; lesson; course",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "kè",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "课",
                         "chinese_traditional": "課"
                     },
@@ -1220,6 +1279,7 @@
                         "english": "fast; quick; swift",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "kuài",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "快",
                         "chinese_traditional": "快"
                     },
@@ -1241,6 +1301,7 @@
                         "english": "happy",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "kuàilè",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "快乐",
                         "chinese_traditional": "快樂"
                     },
@@ -1262,6 +1323,7 @@
                         "english": "tired",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "lèi",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "累",
                         "chinese_traditional": "累"
                     },
@@ -1283,6 +1345,7 @@
                         "english": "leave; depart; go away; apart from",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "lí",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "离",
                         "chinese_traditional": "離"
                     },
@@ -1304,6 +1367,7 @@
                         "english": "two; 2; both; (unit of weight equal to 50 grams)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "liǎng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "两",
                         "chinese_traditional": "兩"
                     },
@@ -1325,6 +1389,7 @@
                         "english": "zero; remnant",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "líng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "零",
                         "chinese_traditional": "零"
                     },
@@ -1346,6 +1411,7 @@
                         "english": "road; path; journey; route",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "lù",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "路",
                         "chinese_traditional": "路"
                     },
@@ -1367,6 +1433,7 @@
                         "english": "trip; journey; tour",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "lǚyóu",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "旅游",
                         "chinese_traditional": "旅游"
                     },
@@ -1388,6 +1455,7 @@
                         "english": "to sell",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "mài",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "卖",
                         "chinese_traditional": "賣"
                     },
@@ -1409,6 +1477,7 @@
                         "english": "slow",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "màn",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "慢",
                         "chinese_traditional": "慢"
                     },
@@ -1430,6 +1499,7 @@
                         "english": "busy",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "máng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "忙",
                         "chinese_traditional": "忙"
                     },
@@ -1451,6 +1521,7 @@
                         "english": "each; every",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "měi",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "每",
                         "chinese_traditional": "每"
                     },
@@ -1472,6 +1543,7 @@
                         "english": "younger sister",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "mèimei",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "妹妹",
                         "chinese_traditional": "妹妹"
                     },
@@ -1493,6 +1565,7 @@
                         "english": "door; opening; gate (Kangxi radical 169)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "mén",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "门",
                         "chinese_traditional": "門"
                     },
@@ -1514,6 +1587,7 @@
                         "english": "noodles",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "miàntiáo",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "面条",
                         "chinese_traditional": "面條"
                     },
@@ -1535,6 +1609,7 @@
                         "english": "male",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "nán",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "男",
                         "chinese_traditional": "男"
                     },
@@ -1556,6 +1631,7 @@
                         "english": "you (polite)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "nín",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "您",
                         "chinese_traditional": "您"
                     },
@@ -1577,6 +1653,7 @@
                         "english": "cow's milk",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "niúnǎi",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "牛奶",
                         "chinese_traditional": "牛奶"
                     },
@@ -1598,6 +1675,7 @@
                         "english": "woman; female (Kangxi radical 38)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "nǚ",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "女",
                         "chinese_traditional": "女"
                     },
@@ -1619,6 +1697,7 @@
                         "english": "side, beside",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "pángbiān",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "旁边",
                         "chinese_traditional": "旁邊"
                     },
@@ -1640,6 +1719,7 @@
                         "english": "to run; to jog",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "pǎobù",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "跑步",
                         "chinese_traditional": "跑步"
                     },
@@ -1661,6 +1741,7 @@
                         "english": "cheap",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "piányi",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "便宜",
                         "chinese_traditional": "便宜"
                     },
@@ -1682,6 +1763,7 @@
                         "english": "ticket; bank note; a vote",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "piào",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "票",
                         "chinese_traditional": "票"
                     },
@@ -1703,6 +1785,7 @@
                         "english": "wife",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "qīzi",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "妻子",
                         "chinese_traditional": "妻子"
                     },
@@ -1724,6 +1807,7 @@
                         "english": "get out of bed",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "qǐ chuáng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "起床",
                         "chinese_traditional": "起床"
                     },
@@ -1745,6 +1829,7 @@
                         "english": "one thousand",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "qiān",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "千",
                         "chinese_traditional": "千"
                     },
@@ -1766,6 +1851,7 @@
                         "english": "pencil",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "qiānbǐ",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "铅笔",
                         "chinese_traditional": "鉛筆"
                     },
@@ -1787,6 +1873,7 @@
                         "english": "clear; fine (as of weather)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "qíng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "晴",
                         "chinese_traditional": "晴"
                     },
@@ -1808,6 +1895,7 @@
                         "english": "last year",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "qùnián",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "去年",
                         "chinese_traditional": "去年"
                     },
@@ -1829,6 +1917,7 @@
                         "english": "ask; let; yield",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "ràng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "让",
                         "chinese_traditional": "讓"
                     },
@@ -1850,6 +1939,7 @@
                         "english": "sun; day; date; time (Kangxi radical 72)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "rì",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "日",
                         "chinese_traditional": "日"
                     },
@@ -1871,6 +1961,7 @@
                         "english": "go to work; be on duty",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "shàngbān",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "上班",
                         "chinese_traditional": "上班"
                     },
@@ -1892,6 +1983,7 @@
                         "english": "health; (human) body",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "shēntǐ",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "身体",
                         "chinese_traditional": "身體"
                     },
@@ -1913,6 +2005,7 @@
                         "english": "get sick; fall ill",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "shēngbìng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "生病",
                         "chinese_traditional": "生病"
                     },
@@ -1934,6 +2027,7 @@
                         "english": "birthday",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "shēngrì",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "生日",
                         "chinese_traditional": "生日"
                     },
@@ -1955,6 +2049,7 @@
                         "english": "time; period",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "shíjiān",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "时间",
                         "chinese_traditional": "時間"
                     },
@@ -1976,6 +2071,7 @@
                         "english": "matter; affair; thing; business",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "shìqing",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "事情",
                         "chinese_traditional": "事情"
                     },
@@ -1997,6 +2093,7 @@
                         "english": "wristwatch",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "shǒubiǎo",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "手表",
                         "chinese_traditional": "手表"
                     },
@@ -2018,6 +2115,7 @@
                         "english": "mobile (cell) phone",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "shǒujī",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "手机",
                         "chinese_traditional": "手機"
                     },
@@ -2039,6 +2137,7 @@
                         "english": "to talk; speak",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "shuōhuà",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "说话",
                         "chinese_traditional": "說話"
                     },
@@ -2060,6 +2159,7 @@
                         "english": "deliver; to carry; to give; send",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "sòng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "送",
                         "chinese_traditional": "送"
                     },
@@ -2081,6 +2181,7 @@
                         "english": "although; even though",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "suīrán",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "虽然",
                         "chinese_traditional": "雖然"
                     },
@@ -2102,6 +2203,7 @@
                         "english": "but; however",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "dànshì",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "但是",
                         "chinese_traditional": "但是"
                     },
@@ -2123,6 +2225,7 @@
                         "english": "it",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "tā",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "它",
                         "chinese_traditional": "它"
                     },
@@ -2144,6 +2247,7 @@
                         "english": "to play football/soccer",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "tīzúqiú",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "踢足球",
                         "chinese_traditional": "踢足球"
                     },
@@ -2165,6 +2269,7 @@
                         "english": "topic; subject; question on a test or assignment",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "tí",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "题",
                         "chinese_traditional": "題"
                     },
@@ -2186,6 +2291,7 @@
                         "english": "to dance",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "tiàowǔ",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "跳舞",
                         "chinese_traditional": "跳舞"
                     },
@@ -2207,6 +2313,7 @@
                         "english": "outer; outside; in addition; foreign",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "wài",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "外",
                         "chinese_traditional": "外"
                     },
@@ -2228,6 +2335,7 @@
                         "english": "to finish; be over; complete",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "wán",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "完",
                         "chinese_traditional": "完"
                     },
@@ -2249,6 +2357,7 @@
                         "english": "to play; have a good time; visit; enjoy",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "wán",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "玩",
                         "chinese_traditional": "玩"
                     },
@@ -2270,6 +2379,7 @@
                         "english": "evening; night",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "wǎnshang",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "晚上",
                         "chinese_traditional": "晚上"
                     },
@@ -2291,6 +2401,7 @@
                         "english": "to go (in a direction); towards; in the past",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "wǎng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "往",
                         "chinese_traditional": "往"
                     },
@@ -2312,6 +2423,7 @@
                         "english": "why?; for what reason?",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "wèishénme",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "为什么",
                         "chinese_traditional": "為什麼"
                     },
@@ -2333,6 +2445,7 @@
                         "english": "ask; inquire",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "wèn",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "问",
                         "chinese_traditional": "問"
                     },
@@ -2354,6 +2467,7 @@
                         "english": "question; problem",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "wèntí",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "问题",
                         "chinese_traditional": "問題"
                     },
@@ -2375,6 +2489,7 @@
                         "english": "watermelon",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "xīguā",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "西瓜",
                         "chinese_traditional": "西瓜"
                     },
@@ -2396,6 +2511,7 @@
                         "english": "to hope; wish for; to desire",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "xīwàng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "希望",
                         "chinese_traditional": "希望"
                     },
@@ -2417,6 +2533,7 @@
                         "english": "to wash; bathe",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "xǐ",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "洗",
                         "chinese_traditional": "洗"
                     },
@@ -2438,6 +2555,7 @@
                         "english": "hour",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "xiǎoshí",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "小时",
                         "chinese_traditional": "小時"
                     },
@@ -2459,6 +2577,7 @@
                         "english": "to laugh; to smile",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "xiào",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "笑",
                         "chinese_traditional": "笑"
                     },
@@ -2480,6 +2599,7 @@
                         "english": "new; Xinjiang autonomous region (abbreviation)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "xīn",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "新",
                         "chinese_traditional": "新"
                     },
@@ -2501,6 +2621,7 @@
                         "english": "surname; family name",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "xìng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "姓",
                         "chinese_traditional": "姓"
                     },
@@ -2522,6 +2643,7 @@
                         "english": "to rest; take a break",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "xiūxi",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "休息",
                         "chinese_traditional": "休息"
                     },
@@ -2543,6 +2665,7 @@
                         "english": "snow",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "xuě",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "雪",
                         "chinese_traditional": "雪"
                     },
@@ -2564,6 +2687,7 @@
                         "english": "color",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "yánsè",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "颜色",
                         "chinese_traditional": "顏色"
                     },
@@ -2585,6 +2709,7 @@
                         "english": "eye",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "yǎnjing",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "眼睛",
                         "chinese_traditional": "眼睛"
                     },
@@ -2606,6 +2731,7 @@
                         "english": "mutton; lamb",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "yángròu",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "羊肉",
                         "chinese_traditional": "羊肉"
                     },
@@ -2627,6 +2753,7 @@
                         "english": "medicine; drug; cure; chemical",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "yào",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "药",
                         "chinese_traditional": "藥"
                     },
@@ -2648,6 +2775,7 @@
                         "english": "to want; to need; will/shall; important",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "yào",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "要",
                         "chinese_traditional": "要"
                     },
@@ -2669,6 +2797,7 @@
                         "english": "also; too",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "yě",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "也",
                         "chinese_traditional": "也"
                     },
@@ -2690,6 +2819,7 @@
                         "english": "together; in the same place",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "yìqǐ",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "一起",
                         "chinese_traditional": "一起"
                     },
@@ -2711,6 +2841,7 @@
                         "english": "a little bit/while; one time; once",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "yíxià",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "一下",
                         "chinese_traditional": "一下"
                     },
@@ -2732,6 +2863,7 @@
                         "english": "already",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "yǐjing",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "已经",
                         "chinese_traditional": "已經"
                     },
@@ -2753,6 +2885,7 @@
                         "english": "meaning; idea; opinion",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "yìsi",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "意思",
                         "chinese_traditional": "意思"
                     },
@@ -2774,6 +2907,7 @@
                         "english": "because",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "yīnwèi",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "因为",
                         "chinese_traditional": "因為"
                     },
@@ -2795,6 +2929,7 @@
                         "english": "so; therefore; as a result",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "suǒyǐ",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "所以",
                         "chinese_traditional": "所以"
                     },
@@ -2816,6 +2951,7 @@
                         "english": "cloudy (weather); yin (the negative principle of Yin and Yang); secret; the moon; negative; shade",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "yīn",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "阴",
                         "chinese_traditional": "陰"
                     },
@@ -2837,6 +2973,7 @@
                         "english": "to swim",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "yóuyǒng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "游泳",
                         "chinese_traditional": "游泳"
                     },
@@ -2858,6 +2995,7 @@
                         "english": "the right (as opposed to left) side",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "yòubian",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "右边",
                         "chinese_traditional": "右邊"
                     },
@@ -2879,6 +3017,7 @@
                         "english": "fish (Kangxi radical 195)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "yú",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "鱼",
                         "chinese_traditional": "魚"
                     },
@@ -2900,6 +3039,7 @@
                         "english": "far; distant; remote",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "yuǎn",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "远",
                         "chinese_traditional": "遠"
                     },
@@ -2921,6 +3061,7 @@
                         "english": "(physical) exercise; movement; sports; campaign",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "yùndòng",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "运动",
                         "chinese_traditional": "運動"
                     },
@@ -2942,6 +3083,7 @@
                         "english": "again; once more",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "zài",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "再",
                         "chinese_traditional": "再"
                     },
@@ -2963,6 +3105,7 @@
                         "english": "(early) morning",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "zǎoshang",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "早上",
                         "chinese_traditional": "早上"
                     },
@@ -2984,6 +3127,7 @@
                         "english": "husband; man",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "zhàngfu",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "丈夫",
                         "chinese_traditional": "丈夫"
                     },
@@ -3005,6 +3149,7 @@
                         "english": "try to find; look for; seek; to give change",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "zhǎo",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "找",
                         "chinese_traditional": "找"
                     },
@@ -3026,6 +3171,7 @@
                         "english": "_ing (indicating action in progress)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "zhe",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "着",
                         "chinese_traditional": "著"
                     },
@@ -3047,6 +3193,7 @@
                         "english": "real; true; genuine",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "zhēn",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "真",
                         "chinese_traditional": "真"
                     },
@@ -3068,6 +3215,7 @@
                         "english": "in the process of (doing something); currently",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "zhèngzài",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "正在",
                         "chinese_traditional": "正在"
                     },
@@ -3089,6 +3237,7 @@
                         "english": "know; be aware of",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "zhīdao",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "知道",
                         "chinese_traditional": "知道"
                     },
@@ -3110,6 +3259,7 @@
                         "english": "prepare; get ready",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "zhǔnbèi",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "准备",
                         "chinese_traditional": "准備"
                     },
@@ -3131,6 +3281,7 @@
                         "english": "to walk; to go; to move (Kangxi radical 156)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "zǒu",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "走",
                         "chinese_traditional": "走"
                     },
@@ -3152,6 +3303,7 @@
                         "english": "the most; _est; (indicator for superlative)",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "zuì",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "最",
                         "chinese_traditional": "最"
                     },
@@ -3173,6 +3325,7 @@
                         "english": "the left side; the left",
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": "zuǒbian",
+                        "pinyin_numbered": "",
                         "chinese_simplified": "左边",
                         "chinese_traditional": "左邊"
                     },
