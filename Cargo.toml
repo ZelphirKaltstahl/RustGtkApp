@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Zelphir Kaltstahl <zelphirkaltstahl@gmail.com>"]
 
 [dependencies]
+pango = "^0.2.0"
 csv = "^0.15.0"
 serde = "^1.0.15"
 serde_derive = "^1.0.15"
