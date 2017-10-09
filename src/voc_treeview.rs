@@ -1,7 +1,6 @@
 extern crate pango;
 extern crate gtk;
 
-use std;
 use self::gtk::prelude::*;
 use self::gtk::{
     CellRendererText,
@@ -36,6 +35,8 @@ impl VocTreeView {
         let column_types = [String::static_type(),
                             String::static_type(),
                             String::static_type(),
+                            String::static_type(),
+                            String::static_type(),
                             String::static_type()];
         let model = TreeStore::new(&column_types);
         let mut tree_view = TreeView::new_with_model(&model);
@@ -50,7 +51,7 @@ impl VocTreeView {
         ).collect();
 
         let mut column_indices: Vec<u32> = Vec::new();
-        for (index, _lang_name) in lang_names.into_iter().enumerate() {
+        for (index, _lang_name) in lang_names.iter().enumerate() {
             column_indices.push(index as u32);
         }
 
@@ -83,8 +84,8 @@ impl VocTreeView {
 
                 assert!(items.len() == lang_ids.len(),
                         "items length was {} with items being {:?}", items.len(), items);
-                let columns: &[u32] = &[];
-                VocTreeView::add_to_tree_store(&model, columns, items);
+                // let columns: &[u32] = &[];
+                VocTreeView::add_to_tree_store(&model, &column_indices, items);
             }
         }
 
@@ -94,13 +95,21 @@ impl VocTreeView {
         }
     }
 
-    pub fn add_to_tree_store(tree_store: &TreeStore, columns: &[u32], row: Vec<String>) {
-        tree_store.insert_with_values(
-            None,
-            None,
-            columns,
-            &VocTreeView::string_to_ToValue(&row)
-        );
+    pub fn add_to_tree_store(tree_store: &TreeStore, column_indices: &[u32], row: Vec<String>) {
+        println!("COLUMNS ARE: {:?}", column_indices);
+        assert!(column_indices.len() == row.len(),
+                "column indices length != row length: {} to {}",
+                column_indices.len(), row.len());
+
+        let inserted_row = VocTreeView::string_to_ToValue(&row);
+
+        assert!(column_indices.len() == row.len(),
+                "column indices length != row length: {} to {}",
+                column_indices.len(), inserted_row.len());
+
+        println!("COLUMNS ARE: {:?}", column_indices);
+        println!("ROW IS: {:?}", row);
+        tree_store.insert_with_values(None, None, column_indices, &inserted_row);
     }
 
     pub fn string_to_ToValue(values_vector: &[String]) -> Vec<&gtk::ToValue> {
@@ -128,13 +137,20 @@ impl VocTreeView {
         tree_view.append_column(&column);
     }
 
-    pub fn append_toggle_column(&mut self, column_name: String) {
+    pub fn append_toggle_column(tree_view: &mut TreeView, column_name: String, column_index: i32) {
         let column = TreeViewColumn::new();
         let cell_renderer = CellRendererToggle::new();
 
+        column.set_sizing(gtk::TreeViewColumnSizing::Fixed);
+        column.set_expand(true);
+        column.set_reorderable(true);
+        column.set_resizable(true);
+        column.set_title(&column_name);
+
         column.pack_start(&cell_renderer, true);
-        column.add_attribute(&cell_renderer, "text", 0);
-        self.tree_view.append_column(&column);
+        column.add_attribute(&cell_renderer, "text", column_index);
+
+        tree_view.append_column(&column);
     }
 }
 
