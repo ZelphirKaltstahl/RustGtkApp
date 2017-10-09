@@ -37,7 +37,7 @@ def convert(json_content):
                         "english": word["translation_data"]["english"],
                         "english_phonetic_script": "(add IPA)",
                         "pinyin": word["translation_data"]["pinyin"],
-                        "pinyin_numbered": "",
+                        "pinyin_numbered": word["translation_data"]["pinyin_numbered"],
                         "chinese_simplified": word["translation_data"]["simplified"],
                         "chinese_traditional": word["translation_data"]["traditional"]
                     },

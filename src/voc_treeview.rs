@@ -12,7 +12,7 @@ use self::gtk::{
     TreeViewColumn,
 };
 
-use vocabulary::{Vocabulary};
+use vocabulary::{Vocabulary, Word};
 
 pub struct VocTreeView {
     pub tree_view: TreeView,
@@ -32,33 +32,67 @@ impl VocTreeView {
     }
 
     pub fn new_with_vocabulary(vocabulary: Vocabulary) -> VocTreeView {
-        let column_types = [String::static_type(),
-                            String::static_type(),
-                            String::static_type(),
-                            String::static_type(),
-                            String::static_type(),
-                            String::static_type()];
-        let model = TreeStore::new(&column_types);
-        let mut tree_view = TreeView::new_with_model(&model);
-        tree_view.get_selection().set_mode(gtk::SelectionMode::Multiple);
-
-        let lang_ids: Vec<String> = vocabulary.metadata.language_id_to_name.iter().map(
-            |(key, _value)| key.clone()
-        ).collect();
-
-        let lang_names: Vec<String> = vocabulary.metadata.language_id_to_name.iter().map(
-            |(_key, value)| value.clone()
-        ).collect();
-
+        let lang_ids: Vec<String> = VocTreeView::get_lang_ids(&vocabulary);
+        // let lang_names: Vec<String> = VocTreeView::get_lang_names(&vocabulary);
+        let number_of_columns: usize = VocTreeView::get_number_of_columns(&vocabulary);
+        let mut column_types: Vec<gtk::Type> = Vec::new();
         let mut column_indices: Vec<u32> = Vec::new();
-        for (index, _lang_name) in lang_names.iter().enumerate() {
+
+        for index in 0..number_of_columns {
+            column_types.push(String::static_type());
             column_indices.push(index as u32);
         }
 
-        // let mut column_indices = &[0; lang_ids.len()];
-        // for (index, lang_name) in lang_names.iter().enumerate() {
-        //     column_indices.push(index as u32);
-        // }
+        let model = TreeStore::new(&column_types);
+        let mut tree_view = TreeView::new_with_model(&model);
+
+        tree_view.get_selection().set_mode(gtk::SelectionMode::Multiple);
+
+        for index in 0..number_of_columns {
+            VocTreeView::append_text_column(
+                &mut tree_view,
+                vocabulary.metadata.language_id_to_name.get(&lang_ids[index]).unwrap().clone(),
+                index as i32)
+        }
+
+        VocTreeView::add_words_to_model(&model, vocabulary, lang_ids, number_of_columns, column_indices);
+        VocTreeView {
+            tree_view: tree_view,
+            model: model
+        }
+    }
+
+    pub fn add_words_to_model(
+        model: &TreeStore,
+        vocabulary: Vocabulary,
+        lang_ids: Vec<String>,
+        number_of_columns: usize,
+        column_indices: Vec<u32>
+    ) {
+        let words = vocabulary.words;
+        for word in words {
+            for meaning in word.meanings {
+                let mut items: Vec<String> = Vec::new();
+                for index in 0..number_of_columns {
+                    let item_to_add = meaning.translation.get(&lang_ids[index]).expect(
+                        &format!("{} {}",
+                                 "Not as many translation attributes as lang_ids in the metadata of the JSON.",
+                                 "Are you sure the JSON is valid?"))
+                        .clone();
+                    items.push(item_to_add);
+                }
+
+                assert!(items.len() == lang_ids.len(),
+                        "items length was {} with items being {:?}",
+                        items.len(), items);
+                VocTreeView::add_to_tree_store(&model, &column_indices, items);
+            }
+        }
+    }
+
+    pub fn get_number_of_columns(vocabulary: &Vocabulary) -> usize {
+        let lang_ids: Vec<String> = VocTreeView::get_lang_ids(&vocabulary);
+        let lang_names: Vec<String> = VocTreeView::get_lang_names(&vocabulary);
 
         assert!(lang_ids.len() == lang_names.len(),
                 format!("number of language ids is not equal to number of language names.{}",
@@ -66,33 +100,20 @@ impl VocTreeView {
                                 lang_ids.len(),
                                 lang_names.len())));
 
-        for index in 0..lang_ids.len() {
-            VocTreeView::append_text_column(
-                &mut tree_view,
-                vocabulary.metadata.language_id_to_name.get(&lang_ids[index]).unwrap().clone(),
-                index as i32)
-        }
+        let number_of_columns = lang_ids.iter().len();
+        number_of_columns
+    }
 
-        for word in vocabulary.words {
-            for meaning in word.meanings {
-                let mut items: Vec<String> = Vec::new();
-                for index in 0..lang_ids.len() {
-                    items.push(meaning.translation.get(&lang_ids[index])
-                               .expect("Not as many translation attributes as lang_ids defined in the metadata of the JSON. Are you sure the JSON is valid?")
-                               .clone());
-                }
+    pub fn get_lang_ids(vocabulary: &Vocabulary) -> Vec<String> {
+        vocabulary.metadata.language_id_to_name.iter().map(
+            |(key, _value)| key.clone()
+        ).collect()
+    }
 
-                assert!(items.len() == lang_ids.len(),
-                        "items length was {} with items being {:?}", items.len(), items);
-                // let columns: &[u32] = &[];
-                VocTreeView::add_to_tree_store(&model, &column_indices, items);
-            }
-        }
-
-        VocTreeView {
-            tree_view: tree_view,
-            model: model
-        }
+    pub fn get_lang_names(vocabulary: &Vocabulary) -> Vec<String> {
+        vocabulary.metadata.language_id_to_name.iter().map(
+            |(_key, value)| value.clone()
+        ).collect()
     }
 
     pub fn add_to_tree_store(tree_store: &TreeStore, column_indices: &[u32], row: Vec<String>) {
