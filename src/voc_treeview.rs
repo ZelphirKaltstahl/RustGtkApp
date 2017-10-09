@@ -12,7 +12,7 @@ use self::gtk::{
     TreeViewColumn,
 };
 
-use vocabulary::{Vocabulary, Word};
+use vocabulary::{Vocabulary};
 
 pub struct VocTreeView {
     pub tree_view: TreeView,
@@ -52,10 +52,11 @@ impl VocTreeView {
             VocTreeView::append_text_column(
                 &mut tree_view,
                 vocabulary.metadata.language_id_to_name.get(&lang_ids[index]).unwrap().clone(),
-                index as i32)
+                index as i32);
         }
 
-        VocTreeView::add_words_to_model(&model, vocabulary, lang_ids, number_of_columns, column_indices);
+        VocTreeView::add_words_to_model(
+            &model, vocabulary, lang_ids, number_of_columns, column_indices);
         VocTreeView {
             tree_view: tree_view,
             model: model
@@ -174,13 +175,3 @@ impl VocTreeView {
         tree_view.append_column(&column);
     }
 }
-
-// use std::fmt;
-// use std::fmt::Debug;
-// pub struct DebugPrintableToValue(pub gtk::ToValue);
-
-// impl Debug for DebugPrintableToValue {
-//     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-//         write!(f, "gtk::ToValue id: {}", self)
-//     }
-// }
