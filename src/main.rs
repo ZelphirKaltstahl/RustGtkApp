@@ -9,32 +9,20 @@ use std::io::prelude::*;
 extern crate gtk;
 use self::gtk::prelude::*;
 use self::gtk::*;
-/*{
-    Alignment,
-    Box,
-    ButtonBox,
-    Label,
-    Menu,
-    MenuBar,
-    MenuItem,
-    Notebook,
-    Orientation,
-    TreeView,
-    Window,
-    WindowExt,
-    WindowType,
-};*/
 
-mod voc_notebook;
-use voc_notebook::{VocNotebook};
+mod gtk_utils;
+use gtk_utils::{make_scrollable, initialize_gtk};
 
-mod voc_treeview;
-use voc_treeview::{VocTreeView};
+mod include;
+use include::voc_notebook::{VocNotebook};
+use include::voc_treeview::{VocTreeView};
+use include::voc_statusbar::{VocStatusBar};
+use include::vocabulary::{Vocabulary};
+use include::voc_status_message::{VocStatusMessage};
 
 mod csv_reading_and_writing;
 
-mod vocabulary;
-use vocabulary::Vocabulary;
+
 
 macro_rules! hashmap {
     ($( $key: expr => $val: expr ),*) => {{
@@ -45,15 +33,15 @@ macro_rules! hashmap {
 }
 
 fn main() {
-    let vocabulary_data: Vec<vocabulary::Vocabulary> = read_data_files();
+    let vocabulary_data: Vec<Vocabulary> = read_data_files();
     for voc in vocabulary_data {
         run_gtk_example(voc);
     }
     // run_gtk_example();
 }
 
-pub fn read_data_files() -> Vec<vocabulary::Vocabulary> {
-    let mut data: Vec<vocabulary::Vocabulary> = Vec::new();
+pub fn read_data_files() -> Vec<Vocabulary> {
+    let mut data: Vec<Vocabulary> = Vec::new();
     let filepaths: Vec<&str> = vec!("data/hsk-1-updated.json");
 
     for filepath in filepaths {
@@ -61,7 +49,7 @@ pub fn read_data_files() -> Vec<vocabulary::Vocabulary> {
         let mut contents = String::new();
         f.read_to_string(&mut contents).expect("something went wrong reading the file");
 
-        let serde_value: vocabulary::Vocabulary = serde_json::from_str(&contents).unwrap();
+        let serde_value: Vocabulary = serde_json::from_str(&contents).unwrap();
         data.push(serde_value);
     }
     data
@@ -69,20 +57,7 @@ pub fn read_data_files() -> Vec<vocabulary::Vocabulary> {
 
 pub fn run_gtk_example(vocabulary: Vocabulary) {
     initialize_gtk();
-
-    let window : Window = Window::new(WindowType::Toplevel);
-    configure_window(&window);
-
-    let vbox = Box::new(Orientation::Vertical, 0);
-    let menubar = create_menu_bar();
-    let mut notebook = create_notebook(vocabulary);
-
-    vbox.pack_start(&menubar, false, false, 0); // child expand fill padding
-    vbox.pack_start(&notebook.notebook, true, true, 0);
-
-    notebook.create_tab_from_str("dynamically added");
-
-    window.add(&vbox);
+    let window: Window = construct_gui(vocabulary);
     window.show_all();
     // Handle closing of the window.
     window.connect_delete_event(|_, _| {
@@ -91,6 +66,31 @@ pub fn run_gtk_example(vocabulary: Vocabulary) {
     });
     // Run the main loop.
     gtk::main();
+}
+
+pub fn construct_gui(vocabulary: Vocabulary) -> Window {
+    let window : Window = Window::new(WindowType::Toplevel);
+    configure_window(&window);
+
+    let vbox = Box::new(Orientation::Vertical, 0);
+    let menubar = create_menu_bar();
+    let mut notebook = create_notebook(vocabulary);
+    let mut status_bar = VocStatusBar::new();
+    status_bar.set_message(
+        VocStatusMessage {
+            message: "Vocabulary loaded.".to_string(),
+            context: "initialization".to_string()
+        }
+    );
+
+    vbox.pack_start(&menubar, false, false, 0); // child expand fill padding
+    vbox.pack_start(&notebook.notebook, true, true, 0);
+    vbox.pack_start(&status_bar.status_bar, false, false, 0);
+
+    notebook.create_tab_from_str("dynamically added");
+
+    window.add(&vbox);
+    window
 }
 
 pub fn configure_window(window: &Window) {
@@ -152,22 +152,8 @@ pub fn create_notebook(vocabulary: Vocabulary) -> VocNotebook {
     notebook
 }
 
-pub fn make_scrollable(widget: &Widget) -> ScrolledWindow {
-    let scrolled_window = gtk::ScrolledWindow::new(None, None);
-    scrolled_window.set_policy(gtk::PolicyType::Automatic, gtk::PolicyType::Automatic);
-    scrolled_window.add(widget);
-    scrolled_window
-}
-
 pub fn create_library_treeview(vocabulary: Vocabulary) -> VocTreeView {
     let voc_tree_view: VocTreeView = VocTreeView::new_with_vocabulary(vocabulary);
     voc_tree_view.tree_view.set_headers_visible(true);
     voc_tree_view
-}
-
-pub fn initialize_gtk() {
-    if gtk::init().is_err() {
-        println!("Failed to initialize GTK.");
-        return;
-    }
 }
