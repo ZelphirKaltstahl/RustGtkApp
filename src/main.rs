@@ -19,6 +19,7 @@ use include::voc_treeview::{VocTreeView};
 use include::voc_statusbar::{VocStatusBar};
 use include::vocabulary::{Vocabulary};
 use include::voc_status_message::{VocStatusMessage};
+use include::voc_big_character_box::{VocBigCharacterBox};
 
 mod csv_reading_and_writing;
 
@@ -136,12 +137,12 @@ pub fn create_file_menu_item() -> MenuItem {
 pub fn create_notebook(vocabulary: Vocabulary) -> VocNotebook {
     let mut notebook = VocNotebook::new();
 
-    let voc_tree_view: VocTreeView = create_library_treeview(vocabulary);
+
 
     // add library tree view
     let library_tab_index : u32 = notebook.create_tab(
         "Library",
-        make_scrollable(&voc_tree_view.tree_view.upcast()).upcast());
+        create_library_tab_content(vocabulary));
     let training_tab_index : u32 = notebook.create_tab(
         "Training",
         gtk::Label::new("Training").upcast());
@@ -150,6 +151,16 @@ pub fn create_notebook(vocabulary: Vocabulary) -> VocNotebook {
         gtk::Label::new("Training").upcast());
 
     notebook
+}
+
+pub fn create_library_tab_content(vocabulary: Vocabulary) -> Widget {
+    let hbox = Box::new(Orientation::Horizontal, 0);
+    let voc_tree_view: VocTreeView = create_library_treeview(vocabulary);
+    let scrollable_voc_tree_view = make_scrollable(&voc_tree_view.tree_view.upcast());
+    let voc_big_character_box = VocBigCharacterBox::new();
+    hbox.pack_start(&scrollable_voc_tree_view, true, true, 0);
+    hbox.pack_start(&voc_big_character_box.container, false, false, 0);
+    hbox.upcast()
 }
 
 pub fn create_library_treeview(vocabulary: Vocabulary) -> VocTreeView {
