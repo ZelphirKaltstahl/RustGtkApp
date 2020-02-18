@@ -2,12 +2,14 @@ extern crate serde;
 #[macro_use]
 extern crate serde_derive;
 extern crate serde_json;
+extern crate pango;
 
 use std::fs::File;
 use std::io::prelude::*;
 
 extern crate gtk;
 use self::gtk::prelude::*;
+// use self::pango::*;
 use self::gtk::*;
 
 mod gtk_utils;
@@ -24,14 +26,14 @@ use include::voc_big_character_box::{VocBigCharacterBox};
 mod csv_reading_and_writing;
 
 
+// macro_rules! hashmap {
+//     ($( $key: expr => $val: expr ),*) => {{
+//          let mut map = ::std::collections::HashMap::new();
+//          $( map.insert($key, $val); )*
+//          map
+//     }}
+// }
 
-macro_rules! hashmap {
-    ($( $key: expr => $val: expr ),*) => {{
-         let mut map = ::std::collections::HashMap::new();
-         $( map.insert($key, $val); )*
-         map
-    }}
-}
 
 fn main() {
     let vocabulary_data: Vec<Vocabulary> = read_data_files();
@@ -137,17 +139,17 @@ pub fn create_file_menu_item() -> MenuItem {
 pub fn create_notebook(vocabulary: Vocabulary) -> VocNotebook {
     let mut notebook = VocNotebook::new();
 
-
-
     // add library tree view
     let library_tab_index : u32 = notebook.create_tab(
         "Library",
         create_library_tab_content(vocabulary));
     let training_tab_index : u32 = notebook.create_tab(
         "Training",
+        // TODO: Error here
         gtk::Label::new("Training").upcast());
     let statistics_tab_index : u32 = notebook.create_tab(
         "Training",
+        // TODO: Error here
         gtk::Label::new("Training").upcast());
 
     notebook

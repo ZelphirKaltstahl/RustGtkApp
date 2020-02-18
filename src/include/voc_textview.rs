@@ -16,7 +16,8 @@ pub struct VocTextView {
 impl VocTextView {
     pub fn new() -> VocTextView {
         let view: TextView = TextView::new();
-        let model: TextBuffer = view.get_buffer().expect("initialized TextView does not yet have a TextBuffer");
+        let model: TextBuffer = view.get_buffer()
+            .expect("initialized TextView does not yet have a TextBuffer");
 
         VocTextView {
             view: view,
@@ -26,7 +27,8 @@ impl VocTextView {
 
     pub fn new_with_characters(characters: String) -> VocTextView {
         let view: TextView = TextView::new();
-        let model: TextBuffer = view.get_buffer().expect("initialized TextView does not yet have a TextBuffer");
+        let model: TextBuffer = view.get_buffer()
+            .expect("initialized TextView does not yet have a TextBuffer");
         // TODO
         VocTextView {
             view: view,

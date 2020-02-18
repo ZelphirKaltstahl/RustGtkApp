@@ -13,7 +13,8 @@ extern crate gtk;
 
 use self::gtk::prelude::*;
 use self::gtk::{
-    Box, Button, Container, IconSize, Image, Label, Notebook, Orientation, ReliefStyle, Widget};
+    Box, Button, Container, IconSize, Image, Label, Notebook, Orientation, ReliefStyle, Widget
+};
 
 pub struct VocNotebook {
     pub notebook: Notebook,
@@ -40,7 +41,7 @@ impl VocNotebook {
 
         // we want a label an image for the closing button
         let close_image = Image::new_from_icon_name("window-close", IconSize::Button.into());
-        let label = Label::new(title);
+        let label = Label::new(Some(title));
 
         // some button styling
         button.set_relief(ReliefStyle::None);
@@ -73,7 +74,7 @@ impl VocNotebook {
     }
 
     pub fn create_tab_from_str(&mut self, title: &str) -> u32 {
-        let label = Label::new(title);
+        let label = Label::new(Some(title));
         self.create_tab(&title, label.upcast())
     }
 }
